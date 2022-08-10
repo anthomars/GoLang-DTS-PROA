@@ -1,0 +1,123 @@
+{{ template "layout" . }}
+{{ define "main" }}
+
+<header class="header">
+  <div class="header-1">
+    <a href="" class="logo"><i class="fas fa-book"></i></a>
+    <form action="" class="search-form">
+      <input type="search" name="" placeholder="search here..." id="search-box" />
+      <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+      <div id="search-btn" class="fas fa-search"></div>
+      <a href="" class="fas fa-heart"></a>
+      <a href="" class="fas fa-shopping-cart"></a>
+      <div id="login-btn" class="fas fa-user"></div>
+    </div>
+  </div>
+
+  <div class="header-2">
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#featured">featured</a>
+      <a href="#arrivals">arrivals</a>
+      <a href="#reviews">reviews</a>
+      <a href="#blogs">blogs</a>
+    </nav>
+  </div>
+</header>
+
+<!-- login form -->
+<div class="login-form-container">
+  <div id="close-login-btn" class="fas fa-times"></div>
+
+  <form action="">
+    <span>username</span>
+    <input type="email" name="" class="box" placeholder="enter your email" id="" />
+    <span>password</span>
+    <input type="password" name="" class="box" placeholder="enter your password" id="" />
+    <div class="checbox">
+      <input type="checkbox" name="" id="remember-me" />
+      <label for="remember-me"> remember me</label>
+    </div>
+    <input type="submit" value="sign in" class="btn" />
+    <p>forget password ? <a href="">click here</a></p>
+    <p>don't have an account ? <a href="">click here</a></p>
+  </form>
+</div>
+
+<div id="home">
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="/static/img/1.jpg" style="width:100%">
+    <div class="text">Men's Fashion</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="/static/img/2.jpg" style="width:100%">
+    <div class="text">Women's Fashion</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="/static/img/3.jpg" style="width:100%">
+    <div class="text">Kids' Fashion</div>
+  </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</div>
+
+<div id="arrivals">
+<br>
+<h1><center>New Arrival This Month</center></h1>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/static/img/shirt1.jpg" alt="Long Chiffon Dress" style="width:100%">
+      <h2>Long Chiffon Brown Dress</h2>
+      <p class="price">Rp. 500.000</p>
+      <br>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/static/img/shirt2.jpg" alt="Lace-detail Satin Blouse" style="width:100%">
+      <h2>Lace-detail Satin Blouse</h2>
+      <p class="price">Rp. 479.000</p>
+      <br>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/static/img/shirt3.jpg" alt="Voluminous Lyocell-blend Dress" style="width:100%">
+      <h2>Voluminous blend Dress</h2>
+      <p class="price">Rp. 525.000</p>
+      <br>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+</div>
+
+<nav class="bottom-navbar">
+<a href="#home" class="fas fa-home"></a>
+<a href="#featured" class="fas fa-list"></a>
+<a href="#arrivals" class="fas fa-tags"></a>
+<a href="#reviews" class="fas fa-comments"></a>
+<a href="#blogs" class="fas fa-blog"></a>
+</nav>
+{{ end }}

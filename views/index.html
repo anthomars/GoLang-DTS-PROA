@@ -1,0 +1,14 @@
+{{ template "layout" . }}
+{{ define "main" }}
+
+    <div class="container text-center mt-10 profil" >
+        <h1>{{ .content }}</h1>
+        <hr>
+        <div class="card text-center rounded" id="card" style="width: 18rem;">
+            <img class="card-img-top" src="/static/img/foto1.jpg" alt="foto">
+            <h4>{{ .name}}</h4>
+            <h5>Sample Desain : <a href="{{ .link}}">eCommece</a></h5>
+        </div>
+    </div>
+
+    {{ end }}
